@@ -1,4 +1,4 @@
-from deck_logic import *
+from card_logic import *
 from game_logic import *
 from gui import *
 
