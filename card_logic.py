@@ -19,25 +19,7 @@ def deal_card(deck):
         return -1
 
 def get_value(card):
-    if card['kind'] == "2":
-        return 2
-    elif card['kind'] == "3":
-        return 3
-    elif card['kind'] == "4":
-        return 4
-    elif card['kind'] == "5":
-        return 5
-    elif card['kind'] == "6":
-        return 6
-    elif card['kind'] == "7":
-        return 7
-    elif card['kind'] == "8":
-        return 8
-    elif card['kind'] == "9":
-        return 9
-    elif card['kind'] == "10":
-        return 10
-    elif card['kind'] == "J":
+    if card['kind'] == "J":
         return 10
     elif card['kind'] == "Q":
         return 10
@@ -46,8 +28,7 @@ def get_value(card):
     elif card['kind'] == "A":
         return 11
     else:
-        print("Error - get_value: No such card type")
-        return None
+        return int(card['kind'])
 
 def get_total(hand):
     total = 0
