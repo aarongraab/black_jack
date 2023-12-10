@@ -20,6 +20,7 @@ def hit_dealer():
 
 initial_setup()
 
+
 print("Dealer Hand: ", dealer_hand)
 print("Player Hand: ", player_hand)
 
